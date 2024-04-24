@@ -1,0 +1,29 @@
+<html>
+  <head>
+  <title>SmartSearch</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+   <body style="
+   background: rgb(4,4,14);
+background: linear-gradient(128deg, rgba(4,4,14,1) 0%, rgba(37,207,120,1) 0%, rgba(2,2,32,1) 58%);
+   ">
+   
+      <div class="container" type="text" required autofocus>  
+        <center>
+        <div class="col-sm-12 col-md-12" style="color: white; margin-top: 50 ">
+          <p class="display-3">KIIT Search</p>
+        </div>
+      </center>
+        <div class="list-group" style="color:white; padding: 50px 50px 50px 50px;">
+          <li class="list-group-item bg-dark"  >Search results</li>
+          {% for link in result %}
+          <a class="list-group-item list-group-item-action bg-light" style="color:black;" href={{link}}>{{link}}</a>
+          {% endfor %}
+        </ol>
+      
+      </div>
+    </div>
+  </body>
+</html>
