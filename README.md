@@ -3,7 +3,7 @@ SmartSearch is an intelligent search engine designed specifically for the KIIT U
 
 
 1.
-gh repo clone Shivans-Awasthi/QueryLinker
+git clone Shivans-Awasthi/QueryLinker
 
 2.
 python .\search_engine_web_app.py
