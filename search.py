@@ -7,7 +7,6 @@ import operator
 from cosine_similarity import get_top_200_similar_urls
 
 from bs4 import BeautifulSoup
-from text_summarizer import FrequencySummarizer
 import requests
 import sys
 
