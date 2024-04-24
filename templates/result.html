@@ -2,28 +2,51 @@
   <head>
   <title>SmartSearch</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
 
   </head>
-   <body style="
-   background: rgb(4,4,14);
-background: linear-gradient(128deg, rgba(4,4,14,1) 0%, rgba(37,207,120,1) 0%, rgba(2,2,32,1) 58%);
-   ">
-   
-      <div class="container" type="text" required autofocus>  
+   <body class="bg-gray-900">
+    
+      <main class="grid h-auto w-900 bg-gray-900 mt-10 mb-10">
         <center>
-        <div class="col-sm-12 col-md-12" style="color: white; margin-top: 50 ">
-          <p class="display-3">KIIT Search</p>
-        </div>
+        <h1 class="max-w-1xl mb-20 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Query Linker</h1>
       </center>
-        <div class="list-group" style="color:white; padding: 50px 50px 50px 50px;">
-          <li class="list-group-item bg-dark"  >Search results</li>
-          {% for link in result %}
-          <a class="list-group-item list-group-item-action bg-light" style="color:black;" href={{link}}>{{link}}</a>
-          {% endfor %}
-        </ol>
-      
-      </div>
-    </div>
+
+      <div class="max-w-lg mx-auto">
+        
+        <div class="bg-white rounded w-49 text-gray-900 text-sm font-medium">
+          <div class="block px-4 py-2 border-b border-gray-200 w-full rounded-t bg-blue-700 text-white">
+            Search Results
+          </div>
+            {% for link in result %}
+            <a href={{link}} class="block px-4 py-2 rounded border-b border-gray-200 w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer">
+              {{link}}
+            </a>
+            {% endfor %}
+
+          </div>
+        </div>
+
+      </main>
+
+
+
+
+      <footer>
+        <div class=" bg-gray-900">
+          <div class="max-w-2xl mx-auto text-white py-10">
+              <div class="text-center">
+                  <h3 class="text-3xl mb-3"> Developed By </h3>
+                  <p> Shivans Awasthi, Debayan Das, Sudipta Mali, Rhythm Sahu and Sarthak Soumy </p>
+                  
+              </div>
+              <div class="mt-20 flex flex-col md:justify-between items-center text-sm text-gray-400">
+                  <p class="order-2 md:order-1 mt-8 md:mt-0 "> &copy; Query Linker, 2024. </p>
+              </div>
+          </div>
+        </div>
+        
+        </footer>
+   
   </body>
 </html>
