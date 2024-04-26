@@ -7,7 +7,7 @@
 import re
 import math
 import nltk
-nltk.data.path.append('workspace/.heroku/python/nltk_data')
+nltk.data.path.append('/workspace/.heroku/python/nltk_data')
 from pathlib import Path
 
 QUERIES_PATH = "./sample_queries/sample_query_examples"
