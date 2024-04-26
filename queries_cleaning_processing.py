@@ -8,7 +8,6 @@ import re
 import math
 import nltk
 
-nltk.download('stopwords')
 from pathlib import Path
 
 QUERIES_PATH = "./sample_queries/sample_query_examples"
