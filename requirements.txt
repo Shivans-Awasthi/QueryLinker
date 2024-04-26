@@ -4,3 +4,4 @@ numpy
 uuid
 flask
 pathlib
+requests
