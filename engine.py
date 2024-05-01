@@ -1,8 +1,4 @@
-"""
-@author: Sriram Veturi
-@title: SmartSearch - An Intelligent Search Engine.
-@date: 05/06/2019
-"""
+
 
 import time
 import argparse
@@ -30,6 +26,7 @@ parser.add_argument(
     help="The domain in which crawling should happen. For example: 'uic.edu'"
 )
 args = parser.parse_args()
+
 
 
 def crawler_driving_function():

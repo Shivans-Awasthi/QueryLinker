@@ -1,8 +1,4 @@
-"""
-@author: Sriram Veturi
-@title: SmartSearch - An Intelligent Search Engine.
-@date: 05/06/2019
-"""
+
 
 ############################################################################################
 # PAGE RANK FORMULA (S(A)) = EPSILON        (1 - EPSILON) * SUM OF ALL B's -> A :  S (B)   #

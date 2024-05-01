@@ -1,8 +1,3 @@
-"""
-@author: Sriram Veturi
-@title: SmartSearch - An Intelligent Search Engine.
-@date: 05/06/2019
-"""
 
 import os
 import json

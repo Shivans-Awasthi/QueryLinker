@@ -1,8 +1,3 @@
-"""
-@author: Sriram Veturi
-@title: SmartSearch - An Intelligent Search Engine.
-@date: 05/06/2019
-"""
 
 import os
 import json
@@ -19,6 +14,8 @@ def build_web_graph():
 	Funciton to build the web graph.
 	:return web_graph
 	"""
+
+
 
 	# First, build a dictionary with URLs and their outgoing links.
 	web_graph = dict()
