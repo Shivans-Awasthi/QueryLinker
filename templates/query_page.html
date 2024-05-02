@@ -19,15 +19,14 @@
 <h1 class="max-w-1xl mb-20 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-black">Query Linker</h1>
 
   <form  action="/searchengine" method="POST" >
-    <div class="flex w-[30rem] rounded bg-white" x-data="{ search: '' }">
+    <div class="flex w-[30rem] rounded-lg bg-white" x-data="{ search: '' }">
         <input name="Name" type="search" class="w-full rounded-lg border-2 border-black px-4 py-1 text-gray-900 focus:outline-none" placeholder="Enter your Query" x-model="search" />
-        <button class="m-2 rounded px-6 py-2 font-bold text-gray-100" :class="(search) ? 'bg-blue-700' : 'bg-gray-500 cursor-not-allowed'" :disabled="!search">Search</button>
+        <button class="m-0 rounded-lg px-4 py-2 font-bold text-gray-100" :class="(search) ? 'bg-blue-700' : 'bg-gray-500 cursor-not-allowed'" :disabled="!search">Search</button>
     </div>
   </form>
 
 
 </main>
-
 
 </centre>
 
