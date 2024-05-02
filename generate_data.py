@@ -41,7 +41,7 @@ def create_documents(sites_list, parent_children_url_map):
 	Function to create documents in the directory.
 	:param sites_list: The list of sites crawled.
 	"""
-
+ 
 	# Index to store the document name.
 	document_name_index = 1
 

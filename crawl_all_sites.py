@@ -182,6 +182,7 @@ def crawl_for_sites(main_url, number_of_pages_to_crawl, main_domain):
             broken_urls.append(url)
             continue
 
+
         # Get the soup of the site.
         site_soup = BeautifulSoup(url_response.text, "lxml")
 
@@ -227,7 +228,8 @@ def crawl_for_sites(main_url, number_of_pages_to_crawl, main_domain):
 
             	unknown_urls.append(anchor)
 
-        # Push the url and all the outgoing urls to the document 
+        # Push the url and all the outgoing urls to the document
+        
         parent_children_url_map[url] = local_urls
 
         # Add the outgoing urls to the queue from left.

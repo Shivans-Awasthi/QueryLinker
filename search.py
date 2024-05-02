@@ -130,7 +130,7 @@ def main_search(query):
 	# First Query is a test query.
 	# Second Query is the user query.
 	print(top_sites)
-	user_query_urls =  top_sites.get(2,["Result not found!!!"])
+	user_query_urls =  top_sites.get(2,["Result not found, Try some other similar keyword.."])
 	# user_query_urls =  top_sites[2]
 	# Printing out the links.
 	print("####################################################")

@@ -106,6 +106,10 @@ h6 {
   font-weight: inherit;
 }
 
+h3{
+  color:#22c55e;
+}
+
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
@@ -974,6 +978,11 @@ video {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color:#22c55e ;
+}
+
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1151,6 +1160,11 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:bg-sky:hover {
+  background-color:#078232;
+
 }
 
 .text-gray-100 {
