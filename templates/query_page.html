@@ -30,12 +30,13 @@
 
 
 <main class="grid h-auto w-900 bg-gray-300 mt-10 mb-40">
-
+  <center>
+  <h1>Search results for : <h3>{{topic}}</h3> </h1>
+  </center>
   <div class="max-w-lg mx-auto">
-    
     <div class="bg-white rounded-lg w-full text-gray-900 text-sm font-medium">
       
-  
+        
         {% for link in result %}
         <a href={{link}} class="block px-4 py-2 rounded border-none w-full hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 cursor-pointer">
           {{link}}
