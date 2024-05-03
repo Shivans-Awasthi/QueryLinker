@@ -1,6 +1,7 @@
-# Logs
+# Local
 sample_queries/
 
+#logs
 logs
 *.log
 npm-debug.log*
