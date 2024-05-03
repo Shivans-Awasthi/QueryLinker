@@ -3,4 +3,4 @@ Query linker is an intelligent search engine designed specifically for the KIIT 
 
 
 
-[Deployment Link] (https://querylinker-web-app-querylinker.koyeb.app)
+Deployment Link : https://querylinker-web-app-querylinker.koyeb.app
