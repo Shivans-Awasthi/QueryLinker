@@ -29,6 +29,7 @@ def generate_TF(corpus, corpus_dict):
     return tf_dict
 
 
+
 def generate_IDF(corpus, corpus_dict, total_queries):
     """
     Function to generate IDF for all the words in the vocab.

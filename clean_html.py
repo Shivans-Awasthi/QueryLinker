@@ -53,7 +53,6 @@ def preprocess_text(text_data):
 	:param text_data: Text to be preprocessed.
 	:return corpus: Preprocessed text.
 	"""
-
 	# Some initializations.
 	stopWords = set(stopwords.words("english"))
 	ps = PorterStemmer()

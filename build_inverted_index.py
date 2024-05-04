@@ -57,10 +57,6 @@ def generate_idf():
 	# Dicitonary to store the IDF of each document.
 	idf_dict = dict()
 
-	#######################
-	# GENARATE VOCABULARY #
-	#######################
-
 	# Vocabulary of all the words in all the urls.
 	all_words_in_all_urls = list()
 	i = 0
