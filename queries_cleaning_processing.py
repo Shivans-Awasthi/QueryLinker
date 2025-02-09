@@ -2,6 +2,7 @@
 import re
 import math
 import nltk
+nltk.download('punkt_tab')
 nltk.data.path.append('/workspace/.heroku/python/nltk_data')
 from pathlib import Path
 
