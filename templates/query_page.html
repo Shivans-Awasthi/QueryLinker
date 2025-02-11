@@ -27,18 +27,18 @@
 
         <form action="/searchengine" method="POST" class="mt-30 mb-30">
           <div
-            class="flex w-[30rem] rounded-xl"
+            class="flex w-[30rem] rounded-lg"
             x-data="{ search: '' }"
           >
             <input
               name="Name"
               type="search"
-              class="m-2 w-full rounded-xl border-2 border-black px-2 py-1 text-gray-900 focus:outline-none"
+              class="m-2 w-full rounded-lg px-2 py-1 text-gray-900 focus:outline-none"
               placeholder="Enter your Query"
               x-model="search"
             />
             <button
-              class="m-2 rounded-xl px-5 py-2 font-bold text-gray-100"
+              class="m-2 rounded-lg px-5 py-2 font-bold text-gray-100"
               :class="(search) ? 'bg-green hover:bg-sky' : 'bg-gray-500 cursor-not-allowed'  "
               :disabled="!search"
             >
