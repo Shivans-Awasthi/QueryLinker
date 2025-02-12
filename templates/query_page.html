@@ -39,14 +39,12 @@
             <input
               name="Name"
               type="search"
-              class="m-2 w-full rounded border px-2 py-1 text-gray-900 focus:border-2"
+              class="m-2 w-full rounded border px-2 py-1 text-gray-900 focus:border-1"
               placeholder="Enter your Query"
-              x-model="search"
+              required
             />
             <button
-              class="m-2 rounded px-5 py-2 font-bold text-gray-100"
-              :class="(search) ? 'bg-green hover:bg-sky' : 'bg-gray-500 cursor-not-allowed'  "
-              :disabled="!search"
+              class="m-2 rounded px-5 py-2 font-bold text-gray-100 bg-green hover:bg-sky"
             >
               Search
             </button>
@@ -85,11 +83,10 @@
     
     <footer class="mt-8 w-full">
       <div class="bg-gray-100 text-center">
-        <div class="text-black py-10">
+        <div class="w-full text-black py-10">
             <h2 class="text-3xl mb-3">Developed By</h3>
             <p class="text-gray-400">
-              Shivans Awasthi, Debayan Das, Sudipta Mali, Rhythm Sahu and
-              Sarthak Soumy
+              Shivans Awasthi, Debayan Das, Sudipta Mali, Rhythm Sahu and Sarthak Soumy
             </p>
           <div
             class="mt-10 flex flex-col md:justify-between items-center text-sm text-gray-400"
