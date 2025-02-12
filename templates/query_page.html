@@ -10,35 +10,35 @@
     />
   </head>
   <body class="bg-gray-000">
-    <main class="grid h-auto w-full bg-gray-300 mt-10 mb-8">
+    <main class="grid h-auto w-full bg-gray-300 mt-10 mt-8">
       <center>
         <img
-          class="mb-8"
+          class="mt-8"
           src="static/KIIT.png"
           height="80"
           width="80"
         />
 
         <h1
-          class="max-w-1xl mb-8 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+          class="max-w-1xl mt-8 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
         >
           Query Linker
         </h1>
 
         <form action="/searchengine" method="POST">
           <div
-            class="flex w-[30rem] rounded-lg"
+            class="flex w-[30rem] rounded"
             x-data="{ search: '' }"
           >
             <input
               name="Name"
               type="search"
-              class="m-2 w-full rounded-lg border px-2 py-1 text-gray-900 focus:border-2"
+              class="m-2 w-full rounded border px-2 py-1 text-gray-900 focus:border-2"
               placeholder="Enter your Query"
               x-model="search"
             />
             <button
-              class="m-2 rounded-lg px-5 py-2 font-bold text-gray-100"
+              class="m-2 rounded px-5 py-2 font-bold text-gray-100"
               :class="(search) ? 'bg-green hover:bg-sky' : 'bg-gray-500 cursor-not-allowed'  "
               :disabled="!search"
             >
@@ -49,16 +49,16 @@
       </center>
     </main>
 
-    <main class="grid h-auto w-900 bg-gray-300 mt-10 mb-8">
+    <main class="grid h-auto w-900 bg-gray-300 mt-10 mt-8">
       <center>
         <h1>
           Search results for :
           <h3>{{topic}}</h3>
         </h1>
       </center>
-      <div class="max-w-lg mx-auto">
+      <div class="w-auto mx-auto">
         <div
-          class="bg-white rounded-lg w-full text-gray-900 text-sm font-medium"
+          class="bg-white rounded w-full text-gray-900 text-sm font-medium"
         >
           {% for link in result %}
           <a
@@ -77,9 +77,9 @@
     <!-- component -->
     <!-- This is an example component -->
     
-    <footer>
+    <footer class="mt-8">
       <div class="bg-gray-100">
-        <div class="max-w-full mx-auto text-black py-10">
+        <div class="w-full text-black py-10">
           <div class="text-center">
             <h2 class="text-3xl mb-3">Developed By</h3>
             <p class="text-gray-400">
